@@ -1,0 +1,13 @@
+<%= form_tag '/login', method: :post do %>
+
+<%= label_tag :email %>
+<input type="email" name="login[email]" value="">
+
+<%= label_tag :password %>
+<input type="password" name="login[password]" value="">
+
+<%= submit_tag "Log In" %>
+
+<% end %>
+
+<%= link_to "Create an account", new_user_path %>
